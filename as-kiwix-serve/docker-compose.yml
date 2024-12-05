@@ -8,11 +8,11 @@ services:
       APP_PORT: 3000
 
   server:
-    image: kiwix/kiwix-serve:latest
+    image: ghcr.io/kiwix/kiwix-serve:3.7.0-2
     ports:
-      - 8888:80
+      - 8888:8080
     volumes:
        - ${APP_DATA_DIR}/zims:/data
     command:
-      - 'wikipedia_es_all_mini_2024-06.zim'
+      - 'wget https://download.kiwix.org/zim/wikipedia/wikipedia_es_all_mini_2024-06.zim'
     restart: unless-stopped
