@@ -1,30 +1,35 @@
 manifestVersion: 1
-id: as-kiwix-serve
-name: kiwix-serve
-tagline: Take the Internet Offline.
-icon: https://upload.wikimedia.org/wikipedia/commons/1/14/Kiwix_icon.svg
-category: Development
-version: "1.0.0"
-port: 8888
+id: as-kiwix
+name: Kiwix
+tagline: An ocean of knowledge, ready to dive into offline
+icon: https://i.imgur.com/eFGQ84F.png
+category: In Progress
+version: "3.7.0"
+port: 8889
 description: >-
-  Add your app's description here.
+  🌐 Kiwix is a groundbreaking open-source platform that revolutionizes access to digital information by making it available offline. Designed for areas with limited or no internet connectivity, Kiwix enables users to download entire websites or collections of digital content and access them without needing an active internet connection. Its primary purpose is to bridge the digital divide, ensuring that knowledge and information are accessible to everyone, regardless of location or circumstances.
 
 
-  You can also add newlines!
+  At the heart of Kiwix is its ability to compress and store vast amounts of information in a format called ZIM. This allows users to carry extensive libraries, such as Wikipedia, Project Gutenberg, TED Talks, or educational resources, on their devices, even with minimal storage space. Whether you're a teacher in a remote village, a student seeking knowledge, or a traveler looking for resources on the go, Kiwix provides a seamless way to access critical information offline.
 
-developer: Kiwix
+
+  Kiwix is versatile and easy to use, supporting a wide range of devices and operating systems, including desktops, laptops, tablets, and smartphones. It also runs efficiently on lightweight setups like Raspberry Pi, making it perfect for schools, libraries, and community centers in underprivileged areas. The platform features an intuitive search system, allowing users to navigate vast libraries of offline content quickly and efficiently.
+
+
+  Kiwix has become an invaluable tool for humanitarian organizations, educational initiatives, and travelers who need reliable access to information without incurring data costs or facing connectivity challenges. By democratizing access to knowledge, Kiwix empowers individuals and communities to learn, grow, and thrive, no matter their circumstances. It is more than just a tool—it’s a catalyst for change, ensuring that the power of the internet reaches everyone, everywhere.
+developer: Emmanuel Engelhart
 website: https://kiwix.org/
 submitter: Alvaro Samudio
-submission: https://github.com/kiwix/
-repo: https://github.com/kiwix/
-support: https://github.com/kiwix/kiwix-js-pwa/issues
+submission: https://github.com/getumbrel/umbrel-apps/pull/
+repo: https://github.com/kiwix
+support: https://kiwix.org/en/frequently-asked-questions/
 gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/aURex56.png
+  - https://i.imgur.com/aURex56.png
+  - https://i.imgur.com/aURex56.png
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
-dependencies: []
+  The update addresses various improvements, including clarifying documentation around ZIM and book name distinctions and ensuring correct versioning for compilation dependencies. Additionally, a new --skipInvalid command-line option has been introduced for Kiwix Server, enhancing its functionality.
+dependencies:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
