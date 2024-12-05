@@ -5,7 +5,7 @@ services:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
       APP_HOST: kiwix-serve
-      APP_PORT: 4000
+      APP_PORT: 3000
 
   server:
     image: kiwix/kiwix-serve:latest
