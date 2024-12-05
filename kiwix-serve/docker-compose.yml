@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app_proxy:
+    environment:
+      APP_HOST: kiwix-serve
+      APP_PORT: 3000
+  kiwix-serve:
+    image: kiwix/kiwix-serve:latest
+    ports:
+      - 8888:80
+    volumes:
+       - ${APP_DATA_DIR}/zims:/data
+    command:
+      - 'wikipedia_es_all_mini_2024-06.zim'
+    restart: unless-stopped

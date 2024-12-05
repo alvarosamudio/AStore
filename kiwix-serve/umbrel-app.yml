@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: kiwix-serve
+name: kiwix-serve
+tagline: Take the Internet Offline.
+icon: https://upload.wikimedia.org/wikipedia/commons/1/14/Kiwix_icon.svg
+category: Development
+version: "1.0.0"
+port: 8888
+description: >-
+  Add your app's description here.
+
+
+  You can also add newlines!
+
+developer: Kiwix
+website: https://kiwix.org/
+submitter: Alvaro Samudio
+submission: https://github.com/kiwix/
+repo: https://github.com/kiwix/
+support: https://github.com/kiwix/kiwix-js-pwa/issues
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
