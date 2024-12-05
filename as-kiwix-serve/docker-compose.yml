@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: as-kiwix-serve
+      APP_HOST: as-kiwix
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
 
