@@ -1,18 +1,20 @@
-version: "3"
-services:
+version: "3.7"
 
+services:
   app_proxy:
     environment:
-      # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: as-kiwix-serve
-      APP_PORT: 3000
+      APP_HOST: as-kiwix-server_server_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
 
   server:
     image: ghcr.io/kiwix/kiwix-serve:3.7.0-2
-    ports:
-      - 8888:8080
+    restart: on-failure
+    command: "*.zim"
+    environment:
+      # Puedes agregar variables de entorno personalizadas si son necesarias
+      # EJEMPLO: KIWI_ENV_VAR: valor
     volumes:
-       - ${APP_DATA_DIR}/zims:/data
-    command:
-      - 'wget https://download.kiwix.org/zim/wikipedia/wikipedia_es_all_mini_2024-06.zim'
-    restart: unless-stopped
+      - ${APP_DATA_DIR}/kiwix/data:/data
+    ports:
+      - "8080:8080"
