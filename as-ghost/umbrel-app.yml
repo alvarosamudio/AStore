@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: as-ghost
 name: Ghost
-category: Developer
+category: CMS
 version: "0.0.6"
 tagline: Ghost is a free and open source blogging platform written in JavaScript
 icon: https://i.imgur.com/5RJJOqw.png
@@ -19,5 +19,5 @@ path: ""
 defaultPassword: ""
 releaseNotes: >
 
-submitter: alvarosamudio
+submitter: Alvaro Samudio
 submission:
