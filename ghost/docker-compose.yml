@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: ghost_server_1
+      APP_HOST: as-ghost_server_1
       APP_PORT: 2368
       PROXY_AUTH_ADD: "false"
 

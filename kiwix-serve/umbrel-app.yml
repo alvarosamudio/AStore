@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: kiwix-serve
+id: as-kiwix-serve
 name: kiwix-serve
 tagline: Take the Internet Offline.
 icon: https://upload.wikimedia.org/wikipedia/commons/1/14/Kiwix_icon.svg
